@@ -138,8 +138,8 @@ PRODUCTS: List[Dict] = [
         "care": "Professional dry clean only",
         "tags": ["half-saree", "silk", "south-indian", "festive", "wedding"],
         "images": [
-            {"url": "https://images.unsplash.com/photo-1610030469983-98e550d6193c?w=800&q=80", "alt": "Royal Purple Half Saree"},
-            {"url": "https://images.unsplash.com/photo-1614886137799-8f3dc0a498bd?w=800&q=80", "alt": "Half Saree Detail"},
+            {"url": "https://unsplash.com/photos/a-woman-in-a-sari-throwing-flowers-in-the-air-TytqgMlC7Ps", "alt": "Royal Purple Half Saree"},
+            {"url": "https://unsplash.com/photos/a-woman-in-a-sari-throwing-flowers-in-the-air-TytqgMlC7Ps", "alt": "Half Saree Detail"},
         ],
         "variants": [
             {"size": "S", "stock": 4}, {"size": "M", "stock": 6},

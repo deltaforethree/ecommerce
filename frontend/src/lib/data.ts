@@ -35,15 +35,15 @@ export interface Product {
 const IMG = {
     // CONFIRMED WORKING:
     saree1: "https://images.unsplash.com/photo-1610030469983-98e550d6193c?w=600&q=80",  // woman in purple saree, red bg
-    saree2: "https://images.unsplash.com/photo-1594938298603-c8148c4dae35?w=600&q=80",  // indian kurti/fashion
+    saree2: "https://images.unsplash.com/photo-1763294631958-92e72af5beb6?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",  // indian kurti/fashion
     kurti1: "https://images.unsplash.com/photo-1572804013309-59a88b7e92f1?w=600&q=80",  // red floral dress
     kurti2: "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=600&q=80",  // fashion model
     fashion1: "https://images.unsplash.com/photo-1585487000160-6ebcfceb0d03?w=600&q=80",  // maroon outfit
     fashion2: "https://images.unsplash.com/photo-1539109136881-3be0616acf4b?w=600&q=80",  // ethnic fashion
-    fashion3: "https://images.unsplash.com/photo-1554412933-514a83d2f3c8?w=600&q=80",  // fashion
-    fashion4: "https://images.unsplash.com/photo-1576185850227-1f72b7f8d48e?w=600&q=80",  // fashion
+    fashion3: "https://images.unsplash.com/photo-1766556514252-45193bb8379f?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",  // fashion
+    fashion4: "https://images.unsplash.com/photo-1766556514252-45193bb8379f?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",  // fashion
     fashion5: "https://images.unsplash.com/photo-1583391733956-3750e0ff4e8b?w=600&q=80",  // anarkali hero
-    fashion6: "https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=600&q=80",  // portrait
+    fashion6: "https://images.unsplash.com/photo-1769063382706-8156b3b33eac?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",  // portrait
     fashion7: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=600&q=80",  // portrait
     fashion8: "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=600&q=80",  // portrait
     fashion9: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=600&q=80",  // portrait
@@ -361,7 +361,7 @@ export const TESTIMONIALS = [
         city: "Chennai",
         rating: 5,
         text: "Ordered the Royal Purple Half Saree for my daughter's function. Got so many compliments! Will definitely order again.",
-        avatar: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=100&q=80",
+        avatar: "https://unsplash.com/photos/a-woman-in-a-sari-throwing-flowers-in-the-air-TytqgMlC7Ps",
         product: "Royal Purple Half Saree",
     },
     {

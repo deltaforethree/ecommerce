@@ -3,6 +3,9 @@ import "./globals.css";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import { Toaster } from "react-hot-toast";
+import FloatingActions from "@/components/layout/FloatingActions";
+import ScrollManager from "@/components/layout/ScrollManager";
+import { Suspense } from "react";
 
 export const metadata: Metadata = {
   title: "Aura India — Premium Indian Women's Fashion",
@@ -34,7 +37,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           }}
         />
         <Navbar />
+        <Suspense fallback={null}>
+          <ScrollManager />
+        </Suspense>
         <main style={{ minHeight: "calc(100vh - 73px)" }}>{children}</main>
+        <FloatingActions />
         <Footer />
       </body>
     </html>

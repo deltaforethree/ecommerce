@@ -30,6 +30,7 @@ export default function Navbar() {
     const [searchQuery, setSearchQuery] = useState("");
     const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
     const searchRef = useRef<HTMLInputElement>(null);
+    const searchContainerRef = useRef<HTMLDivElement>(null);
 
     const cartCount = useCartStore((s) => s.getTotalItems());
     const wishlistCount = useWishlistStore((s) => s.items.length);
@@ -46,10 +47,29 @@ export default function Navbar() {
     }, []);
 
     useEffect(() => {
-        const onScroll = () => setScrolled(window.scrollY > 60);
+        const onScroll = () => {
+            setScrolled(window.scrollY > 60);
+            if (searchOpen) setSearchOpen(false); // Close search on scroll
+        };
         window.addEventListener("scroll", onScroll);
         return () => window.removeEventListener("scroll", onScroll);
-    }, []);
+    }, [searchOpen]);
+
+    // Handle click outside to close search
+    useEffect(() => {
+        const handleClickOutside = (event: MouseEvent) => {
+            if (searchContainerRef.current && !searchContainerRef.current.contains(event.target as Node)) {
+                setSearchOpen(false);
+            }
+        };
+
+        if (searchOpen) {
+            document.addEventListener("mousedown", handleClickOutside);
+        }
+        return () => {
+            document.removeEventListener("mousedown", handleClickOutside);
+        };
+    }, [searchOpen]);
 
     useEffect(() => {
         if (searchOpen) searchRef.current?.focus();
@@ -180,6 +200,7 @@ export default function Navbar() {
                             onMouseEnter={(e) => (e.currentTarget.style.color = "#c8956c")}
                             onMouseLeave={(e) => (e.currentTarget.style.color = "#1a1412")}
                             aria-label="Search"
+                            id="search-toggle-btn"
                         >
                             <Search size={20} />
                         </button>
@@ -255,7 +276,10 @@ export default function Navbar() {
 
                 {/* Search Bar */}
                 {searchOpen && (
-                    <div style={{ borderTop: "1px solid #e8ddd6", padding: "16px 24px", background: "#fffcf8", animation: "fadeIn 0.2s ease" }}>
+                    <div
+                        ref={searchContainerRef}
+                        style={{ borderTop: "1px solid #e8ddd6", padding: "16px 24px", background: "#fffcf8", animation: "fadeIn 0.2s ease" }}
+                    >
                         <form onSubmit={handleSearch} style={{ maxWidth: 600, margin: "0 auto", display: "flex", gap: 12 }}>
                             <input
                                 ref={searchRef}

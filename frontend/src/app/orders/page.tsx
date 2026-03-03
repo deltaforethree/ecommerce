@@ -19,7 +19,6 @@ const MOCK_ORDERS = [
         id: "AIR-B7Q1R8",
         date: "15 Feb 2024",
         items: [
-            { name: "Royal Purple Half Saree", size: "L", qty: 1, price: 8999, image: "https://images.unsplash.com/photo-1610030469983-98e550d6193c?w=200&q=80" },
             { name: "Terracotta Bandhani Kurti", size: "S", qty: 2, price: 1899, image: "https://images.unsplash.com/photo-1594938298603-c8148c4dae35?w=200&q=80" },
         ],
         status: "Shipped",

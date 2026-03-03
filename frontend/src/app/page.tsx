@@ -305,34 +305,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ─── BRAND STORY BANNER ─── */}
-      <section className="story-grid">
-        <div style={{ position: "relative", overflow: "hidden", minHeight: 380 }}>
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img
-            src="https://images.unsplash.com/photo-1610030469983-98e550d6193c?w=900&q=85"
-            alt="Our Story"
-            style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "center 20%", display: "block" }}
-          />
-          <div style={{ position: "absolute", inset: 0, background: "linear-gradient(135deg, rgba(10,8,6,0.25) 0%, transparent 60%)" }} />
-        </div>
-        <div style={{ background: "#1a1412", display: "flex", alignItems: "center", padding: "64px clamp(28px, 7vw, 80px)" }}>
-          <div>
-            <p className="section-label" style={{ color: "#c8956c" }}>Our Story</p>
-            <h2 style={{ fontFamily: "Cormorant Garamond, serif", fontSize: "clamp(28px, 3.5vw, 46px)", fontWeight: 400, color: "#fffcf8", marginBottom: 20, lineHeight: 1.2 }}>
-              Celebrating the Modern Indian Woman
-            </h2>
-            <p style={{ fontFamily: "Jost, sans-serif", fontSize: 15, color: "#b0a099", lineHeight: 1.9, marginBottom: 16 }}>
-              Aura India was born from a deep love for the rich tapestry of Indian textiles and the timeless elegance of our heritage. We believe every woman deserves to feel like royalty.
-            </p>
-            <p style={{ fontFamily: "Jost, sans-serif", fontSize: 15, color: "#b0a099", lineHeight: 1.9, marginBottom: 36 }}>
-              Each piece is thoughtfully crafted by our in-house artisans, blending centuries-old techniques with contemporary silhouettes.
-            </p>
-            <Link href="/about" className="btn-rose">Our Story <ArrowRight size={14} /></Link>
-          </div>
-        </div>
-      </section>
-
       {/* ─── NEW ARRIVALS ─── */}
       <section style={{ padding: "var(--section-pad-y, 80px) var(--section-pad-x, 5vw)" }} className="section-mobile-pad">
         <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-end", marginBottom: 44, flexWrap: "wrap", gap: 12 }}>
