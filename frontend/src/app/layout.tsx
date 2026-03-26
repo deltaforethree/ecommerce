@@ -3,7 +3,7 @@ import "./globals.css";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import { Toaster } from "react-hot-toast";
-import FloatingActions from "@/components/layout/FloatingActions";
+import ScrollActions from "@/components/layout/ScrollActions";
 import ScrollManager from "@/components/layout/ScrollManager";
 import { Suspense } from "react";
 
@@ -41,7 +41,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <ScrollManager />
         </Suspense>
         <main style={{ minHeight: "calc(100vh - 73px)" }}>{children}</main>
-        <FloatingActions />
+        <ScrollActions />
         <Footer />
       </body>
     </html>

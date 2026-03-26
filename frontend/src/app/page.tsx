@@ -4,13 +4,13 @@ import { ArrowRight, Star, Package, RefreshCw, Shield, Truck } from "lucide-reac
 import ProductCard from "@/features/products/components/ProductCard";
 import { PRODUCTS, TESTIMONIALS } from "@/lib/data";
 
-// Confirmed-working Unsplash fashion image for hero
-const HERO_IMAGE = "https://images.unsplash.com/photo-1583391733956-3750e0ff4e8b?w=1600&q=90";
+// Hero image — striking red ethnic outfit, perfect for hero
+const HERO_IMAGE = "/photos/THUE2679.JPG";
 
 
 const HERO_SLIDES = [
   {
-    image: "https://images.unsplash.com/photo-1583391733956-3750e0ff4e8b?w=900&q=85",
+    image: "/photos/THUE2679.JPG",
     label: "New Collection 2024",
     title: "Elegance\nRooted in\nTradition",
     subtitle: "Discover handcrafted anarkalis and kurti sets that celebrate the beauty of Indian women.",
@@ -19,7 +19,7 @@ const HERO_SLIDES = [
     accent: "#c8956c",
   },
   {
-    image: "https://images.unsplash.com/photo-1610030469983-98e550d6193c?w=900&q=85",
+    image: "/photos/IMG_E1175.JPG",
     label: "Bestsellers",
     title: "Timeless\nIndian\nGrace",
     subtitle: "Premium silk kurti sets and half sarees crafted for the modern woman who cherishes heritage.",
@@ -28,7 +28,7 @@ const HERO_SLIDES = [
     accent: "#a0714a",
   },
   {
-    image: "https://images.unsplash.com/photo-1631233859484-4fdf47e57fa8?w=900&q=85",
+    image: "/photos/0(1).jpg",
     label: "Festive Edit",
     title: "Shine\nThis\nSeason",
     subtitle: "Opulent festive wear with intricate embroidery — from weddings to celebrations.",
@@ -40,10 +40,10 @@ const HERO_SLIDES = [
 
 
 const COLLECTIONS = [
-  { title: "Anarkali", image: "https://images.unsplash.com/photo-1583391733956-3750e0ff4e8b?w=600&q=80", href: "/products?category=anarkali", count: "12 styles" },
-  { title: "Half Saree", image: "https://images.unsplash.com/photo-1610030469983-98e550d6193c?w=600&q=80", href: "/products?category=half-saree", count: "8 styles" },
-  { title: "Kurti Sets", image: "https://images.unsplash.com/photo-1572804013309-59a88b7e92f1?w=600&q=80", href: "/products?category=kurti-set", count: "20 styles" },
-  { title: "Co-ord Sets", image: "https://images.unsplash.com/photo-1585487000160-6ebcfceb0d03?w=600&q=80", href: "/products?category=co-ord-set", count: "18 styles" },
+  { title: "Anarkali", image: "/photos/IMG_0126.JPG", href: "/products?category=anarkali", count: "12 styles" },
+  { title: "Half Saree", image: "/photos/6a.jpg", href: "/products?category=half-saree", count: "8 styles" },
+  { title: "Kurti Sets", image: "/photos/FTNX9809.JPG", href: "/products?category=kurti-set", count: "20 styles" },
+  { title: "Co-ord Sets", image: "/photos/IMG_E1634.JPG", href: "/products?category=co-ord-set", count: "18 styles" },
 ];
 
 const VALUES = [
@@ -381,7 +381,7 @@ export default function HomePage() {
       <section style={{ position: "relative", padding: "100px 5vw", overflow: "hidden", textAlign: "center" }} className="section-mobile-pad">
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
-          src="https://images.unsplash.com/photo-1631233859484-4fdf47e57fa8?w=1600&q=85"
+          src="/photos/5(1).jpg"
           alt="Shop CTA"
           style={{ position: "absolute", inset: 0, width: "100%", height: "100%", objectFit: "cover", objectPosition: "center 30%", display: "block" }}
         />

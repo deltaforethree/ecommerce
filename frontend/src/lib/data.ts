@@ -30,24 +30,7 @@ export interface Product {
     reviewCount: number;
 }
 
-// Verified working Unsplash fashion photo IDs
-// Confirmed visible in browser screenshots:
-const IMG = {
-    // CONFIRMED WORKING:
-    saree1: "https://images.unsplash.com/photo-1610030469983-98e550d6193c?w=600&q=80",  // woman in purple saree, red bg
-    saree2: "https://images.unsplash.com/photo-1763294631958-92e72af5beb6?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",  // indian kurti/fashion
-    kurti1: "https://images.unsplash.com/photo-1572804013309-59a88b7e92f1?w=600&q=80",  // red floral dress
-    kurti2: "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=600&q=80",  // fashion model
-    fashion1: "https://images.unsplash.com/photo-1585487000160-6ebcfceb0d03?w=600&q=80",  // maroon outfit
-    fashion2: "https://images.unsplash.com/photo-1539109136881-3be0616acf4b?w=600&q=80",  // ethnic fashion
-    fashion3: "https://images.unsplash.com/photo-1766556514252-45193bb8379f?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",  // fashion
-    fashion4: "https://images.unsplash.com/photo-1766556514252-45193bb8379f?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",  // fashion
-    fashion5: "https://images.unsplash.com/photo-1583391733956-3750e0ff4e8b?w=600&q=80",  // anarkali hero
-    fashion6: "https://images.unsplash.com/photo-1769063382706-8156b3b33eac?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",  // portrait
-    fashion7: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=600&q=80",  // portrait
-    fashion8: "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=600&q=80",  // portrait
-    fashion9: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=600&q=80",  // portrait
-};
+// Local product photos — each product gets unique images, no duplicates
 
 export const PRODUCTS: Product[] = [
     {
@@ -63,8 +46,8 @@ export const PRODUCTS: Product[] = [
         care: "Dry clean only",
         tags: ["anarkali", "festive", "wedding", "embroidered"],
         images: [
-            { url: IMG.fashion6, alt: "Crimson Anarkali Front" },
-            { url: IMG.fashion6, alt: "Crimson Anarkali Back" },
+            { url: "/photos/THUE2679.JPG", alt: "Crimson Anarkali Front" },
+            { url: "/photos/IMG_E9027.JPG", alt: "Crimson Anarkali Back" },
         ],
         variants: [
             { size: "XS", stock: 3 }, { size: "S", stock: 5 },
@@ -87,8 +70,8 @@ export const PRODUCTS: Product[] = [
         care: "Hand wash cold",
         tags: ["kurti", "silk", "ethnic", "daily-wear"],
         images: [
-            { url: IMG.saree1, alt: "Ivory Kurti Set Front" },
-            { url: IMG.kurti1, alt: "Ivory Kurti Set Detail" },
+            { url: "/photos/FTNX9809.JPG", alt: "Ivory Kurti Set Front" },
+            { url: "/photos/CCMU7906.JPG", alt: "Ivory Kurti Set Detail" },
         ],
         variants: [
             { size: "S", stock: 10 }, { size: "M", stock: 12 },
@@ -110,8 +93,8 @@ export const PRODUCTS: Product[] = [
         care: "Gentle machine wash",
         tags: ["anarkali", "chikankari", "festive", "cotton"],
         images: [
-            { url: IMG.saree2, alt: "Saffron Anarkali Front" },
-            { url: IMG.fashion6, alt: "Saffron Anarkali Detail" },
+            { url: "/photos/IMG_0126.JPG", alt: "Saffron Anarkali Front" },
+            { url: "/photos/IMG_E9924_Copy.JPG", alt: "Saffron Anarkali Detail" },
         ],
         variants: [
             { size: "XS", stock: 2 }, { size: "S", stock: 7 },
@@ -134,8 +117,8 @@ export const PRODUCTS: Product[] = [
         care: "Dry clean recommended",
         tags: ["kurti", "chanderi", "dupatta", "casual"],
         images: [
-            { url: IMG.kurti2, alt: "Peacock Kurti Front" },
-            { url: IMG.fashion4, alt: "Peacock Kurti Detail" },
+            { url: "/photos/8(1).jpg", alt: "Peacock Kurti Front" },
+            { url: "/photos/5(1).jpg", alt: "Peacock Kurti Detail" },
         ],
         variants: [
             { size: "S", stock: 8 }, { size: "M", stock: 15 },
@@ -157,8 +140,8 @@ export const PRODUCTS: Product[] = [
         care: "Machine wash cold",
         tags: ["coord-set", "linen", "casual", "modern"],
         images: [
-            { url: IMG.fashion1, alt: "Forest Green Co-ord" },
-            { url: IMG.fashion5, alt: "Co-ord Detail" },
+            { url: "/photos/6a.jpg", alt: "Forest Green Co-ord" },
+            { url: "/photos/IMG_3583.JPG", alt: "Co-ord Detail" },
         ],
         variants: [
             { size: "XS", stock: 5 }, { size: "S", stock: 9 },
@@ -180,8 +163,8 @@ export const PRODUCTS: Product[] = [
         care: "Professional dry clean only",
         tags: ["half-saree", "silk", "south-indian", "festive", "wedding"],
         images: [
-            { url: IMG.saree1, alt: "Royal Purple Half Saree" },
-            { url: IMG.saree2, alt: "Half Saree Detail" },
+            { url: "/photos/IMG_E1175.JPG", alt: "Royal Purple Half Saree" },
+            { url: "/photos/IMG_E1177.JPG", alt: "Half Saree Detail" },
         ],
         variants: [
             { size: "S", stock: 4 }, { size: "M", stock: 6 },
@@ -203,8 +186,8 @@ export const PRODUCTS: Product[] = [
         care: "Machine wash cold",
         tags: ["maxi", "ethnic", "casual", "floral", "summer"],
         images: [
-            { url: IMG.fashion3, alt: "Dusty Rose Maxi Front" },
-            { url: IMG.fashion2, alt: "Maxi Detail" },
+            { url: "/photos/IMG_1415.JPG", alt: "Dusty Rose Maxi Front" },
+            { url: "/photos/OWRI2864.JPG", alt: "Maxi Detail" },
         ],
         variants: [
             { size: "XS", stock: 6 }, { size: "S", stock: 11 },
@@ -226,8 +209,8 @@ export const PRODUCTS: Product[] = [
         care: "Dry clean recommended",
         tags: ["skirt", "top", "mirror-work", "fusion", "festive"],
         images: [
-            { url: IMG.fashion4, alt: "Midnight Navy Skirt Set" },
-            { url: IMG.fashion3, alt: "Navy Set Detail" },
+            { url: "/photos/0(1).jpg", alt: "Midnight Navy Skirt Set" },
+            { url: "/photos/IMG_1574.JPG", alt: "Navy Set Detail" },
         ],
         variants: [
             { size: "S", stock: 7 }, { size: "M", stock: 10 },
@@ -249,8 +232,8 @@ export const PRODUCTS: Product[] = [
         care: "Hand wash in cold water",
         tags: ["kurti", "bandhani", "cotton", "daily-wear", "traditional"],
         images: [
-            { url: IMG.kurti2, alt: "Terracotta Bandhani Kurti" },
-            { url: IMG.kurti1, alt: "Bandhani Pattern" },
+            { url: "/photos/IMG_E1153.JPG", alt: "Terracotta Bandhani Kurti" },
+            { url: "/photos/CXYQE8503.JPG", alt: "Bandhani Pattern" },
         ],
         variants: [
             { size: "S", stock: 12 }, { size: "M", stock: 18 },
@@ -272,8 +255,8 @@ export const PRODUCTS: Product[] = [
         care: "Machine wash gentle",
         tags: ["lounge", "comfort", "modal", "daily-wear"],
         images: [
-            { url: IMG.fashion5, alt: "Sage Lounge Set" },
-            { url: IMG.fashion1, alt: "Lounge Set Detail" },
+            { url: "/photos/IMG_8926.JPG", alt: "Sage Lounge Set" },
+            { url: "/photos/IMG_E8948.JPG", alt: "Lounge Set Detail" },
         ],
         variants: [
             { size: "XS", stock: 8 }, { size: "S", stock: 14 },
@@ -295,8 +278,8 @@ export const PRODUCTS: Product[] = [
         care: "Professional dry clean only",
         tags: ["anarkali", "bridal", "gold", "sequin", "wedding"],
         images: [
-            { url: IMG.saree2, alt: "Gold Tissue Anarkali" },
-            { url: IMG.fashion6, alt: "Gold Anarkali Detail" },
+            { url: "/photos/IMG_E1193.JPG", alt: "Gold Tissue Anarkali" },
+            { url: "/photos/IMG_E8538.JPG", alt: "Gold Anarkali Detail" },
         ],
         variants: [
             { size: "XS", stock: 2 }, { size: "S", stock: 4 },
@@ -318,8 +301,8 @@ export const PRODUCTS: Product[] = [
         care: "Machine wash gentle",
         tags: ["suit", "lawn", "casual", "floral", "pastel"],
         images: [
-            { url: IMG.fashion2, alt: "Lavender Lawn Suit" },
-            { url: IMG.fashion3, alt: "Lavender Suit Detail" },
+            { url: "/photos/IMG_E9732.JPG", alt: "Lavender Lawn Suit" },
+            { url: "/photos/QLUF1062.JPG", alt: "Lavender Suit Detail" },
         ],
         variants: [
             { size: "S", stock: 9 }, { size: "M", stock: 14 },
@@ -352,7 +335,7 @@ export const TESTIMONIALS = [
         city: "Mumbai",
         rating: 5,
         text: "Absolutely in love with my Saffron Anarkali! The fabric quality is divine and the embroidery is even more beautiful in person.",
-        avatar: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&q=80",
+        avatar: "/photos/IMG_E9732.JPG",
         product: "Saffron Chikankari Anarkali",
     },
     {
@@ -361,7 +344,7 @@ export const TESTIMONIALS = [
         city: "Chennai",
         rating: 5,
         text: "Ordered the Royal Purple Half Saree for my daughter's function. Got so many compliments! Will definitely order again.",
-        avatar: "https://unsplash.com/photos/a-woman-in-a-sari-throwing-flowers-in-the-air-TytqgMlC7Ps",
+        avatar: "/photos/LOXT6771.JPG",
         product: "Royal Purple Half Saree",
     },
     {
@@ -370,7 +353,7 @@ export const TESTIMONIALS = [
         city: "Delhi",
         rating: 5,
         text: "The packaging was so luxurious! The Ivory Silk Kurti Set is stunning. Fits perfectly and looks way more expensive than what I paid.",
-        avatar: "https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=100&q=80",
+        avatar: "/photos/NWKH5511.JPG",
         product: "Ivory Silk Kurti Set",
     },
     {
@@ -379,7 +362,7 @@ export const TESTIMONIALS = [
         city: "Bangalore",
         rating: 5,
         text: "Superfast delivery and the quality is exceptional! My Gold Tissue Anarkali was exactly as shown. 10/10 would recommend!",
-        avatar: "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=100&q=80",
+        avatar: "/photos/OWRI2864.JPG",
         product: "Gold Tissue Anarkali",
     },
 ];

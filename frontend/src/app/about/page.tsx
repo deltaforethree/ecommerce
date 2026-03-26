@@ -21,7 +21,7 @@ export default function AboutPage() {
         <div>
             {/* Hero */}
             <section style={{ position: "relative", height: "55vh", display: "flex", alignItems: "center", justifyContent: "center", overflow: "hidden" }}>
-                <Image src="https://images.unsplash.com/photo-1583391733956-3750e0ff4e8b?w=1600&q=85" alt="About Aura India" fill style={{ objectFit: "cover" }} />
+                <Image src="/photos/8(1).jpg" alt="About Aura India" fill style={{ objectFit: "cover" }} />
                 <div style={{ position: "absolute", inset: 0, background: "rgba(26,20,18,0.6)" }} />
                 <div style={{ position: "relative", zIndex: 1, textAlign: "center", padding: "0 5vw" }}>
                     <p className="section-label" style={{ color: "#e8bfa3" }}>Our Story</p>

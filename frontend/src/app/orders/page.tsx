@@ -8,7 +8,7 @@ const MOCK_ORDERS = [
         id: "AIR-A3K9Z2",
         date: "28 Feb 2024",
         items: [
-            { name: "Crimson Anarkali Suit", size: "M", qty: 1, price: 4999, image: "https://images.unsplash.com/photo-1614886137799-8f3dc0a498bd?w=200&q=80" },
+            { name: "Crimson Anarkali Suit", size: "M", qty: 1, price: 4999, image: "/photos/THUE2679.JPG" },
         ],
         status: "Delivered",
         statusColor: "#4a8c6f",
@@ -19,7 +19,7 @@ const MOCK_ORDERS = [
         id: "AIR-B7Q1R8",
         date: "15 Feb 2024",
         items: [
-            { name: "Terracotta Bandhani Kurti", size: "S", qty: 2, price: 1899, image: "https://images.unsplash.com/photo-1594938298603-c8148c4dae35?w=200&q=80" },
+            { name: "Terracotta Bandhani Kurti", size: "S", qty: 2, price: 1899, image: "/photos/IMG_E1153.JPG" },
         ],
         status: "Shipped",
         statusColor: "#c8956c",
@@ -30,7 +30,7 @@ const MOCK_ORDERS = [
         id: "AIR-C2M5P6",
         date: "3 Feb 2024",
         items: [
-            { name: "Ivory Silk Kurti Set", size: "M", qty: 1, price: 3499, image: "https://images.unsplash.com/photo-1610030469983-98e550d6193c?w=200&q=80" },
+            { name: "Ivory Silk Kurti Set", size: "M", qty: 1, price: 3499, image: "/photos/IMG_E1175.JPG" },
         ],
         status: "Processing",
         statusColor: "#7a6e68",
